@@ -25,7 +25,10 @@ dependencies {
     application project(':app')
     feature project(':feature')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    feature project(":api_service")
 }
 repositories {
     mavenCentral()
 }
+
+apply plugin: 'kotlin-android-extensions'
